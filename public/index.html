@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="VoiceApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice-Controlled Web App</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div ng-controller="MainController">
+        <h1>Voice-Controlled Web App</h1>
+        <input type="text" ng-model="command" placeholder="Say a command">
+        <button ng-click="sendCommand()">Send Command</button>
+        <button ng-click="startListening()">🎤 Start Listening</button>
+        <p>Response: {{ responseMessage }}</p>
+    </div>
+</body>
+</html>
